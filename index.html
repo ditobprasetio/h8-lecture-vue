@@ -14,6 +14,8 @@
   </head>
   <body>
     <div id="app">
+      <button @click="listTodo">Load data dulu</button>
+
       <div class="container">
         <div id="form" class="row mb-3">
           <div class="col col-md-2 col-xl-3"></div>
@@ -53,7 +55,6 @@
                   </div>
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
-
               </div>
             </div>
           </div>
@@ -63,18 +64,19 @@
         <div id="todos" class="row">
           <div class="col col-md-2 col-xl-3"></div>
           <div class="col-sm-12 col-md-8 col-xl-6">
-
             <!-- Looping todos -->
-            <div v-for="(todo, index) in todos" class="card mt-3">
+            <div v-for="todo in todos" class="card mt-3">
               <div class="card-body m-4">
                 <div class="d-flex justify-content-between">
                   <h4>{{todo.title}}</h4>
-                    <i @click="deleteTodo(index)" class="fas fa-trash text-danger"></i>
+                  <i
+                    @click.prevent="deleteTodo(todo.id)"
+                    class="fas fa-trash text-danger"
+                  ></i>
                 </div>
                 <p>{{todo.description}}</p>
               </div>
             </div>
-
           </div>
           <div class="col col-md-2 col-xl-3"></div>
         </div>

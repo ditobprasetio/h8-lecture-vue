@@ -1,4 +1,3 @@
-
 const app = new Vue({
   el: '#app',
   data: {
@@ -9,16 +8,43 @@ const app = new Vue({
     todos: [],
   },
   methods: {
+    listTodo() {
+      axios({
+        method: 'GET',
+        url: 'http://localhost:3000/todos',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+        .then(({ data }) => {
+          this.todos = data;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
     postTodo() {
       this.todos.push({
         title: this.todo.title,
-        description: this.todo.description
+        description: this.todo.description,
       });
       this.todo.title = '';
       this.todo.description = '';
     },
-    deleteTodo(index) {
-      this.todos.splice(index, 1)
-    }
+    deleteTodo(id) {
+      axios({
+        method: 'DELETE',
+        url: 'http://localhost:3000/todos/' + id,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+        .then(() => {
+          this.listTodo();
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
   },
 });

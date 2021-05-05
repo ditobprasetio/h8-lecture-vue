@@ -2,53 +2,18 @@
   "todos": [
     {
       "id": 1,
-      "title": "Title 1",
-      "description": "description 1"
+      "title": "Tidur",
+      "description": "Tidur cukup, jangan lupa banyak istirahat"
     },
     {
-      "title": "Title 1",
-      "description": "description 1",
-      "id": 2
+      "id": 2,
+      "title": "Belajar Vue",
+      "description": "Belajar giat supaya nilai tidak turun"
     },
     {
-      "title": "Title 1",
-      "description": "description 1",
-      "id": 3
-    },
-    {
-      "title": "Title 1",
-      "description": "description 1",
-      "id": 4
-    },
-    {
-      "title": "Title 1",
-      "description": "description 1",
-      "id": 5
-    },
-    {
-      "title": "Title 1",
-      "description": "description 1",
-      "id": 6
-    },
-    {
-      "title": "Title 1",
-      "description": "description 1",
-      "id": 7
-    },
-    {
-      "title": "Title 1",
-      "description": "description 1",
-      "id": 8
-    },
-    {
-      "title": "Title 1",
-      "description": "description 1",
-      "id": 9
-    },
-    {
-      "title": "Title 1",
-      "description": "description 1",
-      "id": 10
+      "id": 3,
+      "title": "Berdoa",
+      "description": "Banyak berdoa, berharap dipermudah belajarku di Havktiv8"
     }
   ]
 }
