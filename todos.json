@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Tidur",
+      "description": "Tidur cukup, jangan lupa banyak istirahat"
+    },
+    {
+      "id": 2,
+      "title": "Belajar Vue",
+      "description": "Belajar giat supaya nilai tidak turun"
+    },
+    {
+      "id": 3,
+      "title": "Berdoa",
+      "description": "Banyak berdoa, berharap dipermudah belajarku di Havktiv8"
+    }
+  ]
+}
