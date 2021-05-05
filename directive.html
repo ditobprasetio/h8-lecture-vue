@@ -7,6 +7,54 @@
     <title>Vue Directive</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <div id="app">
+      <p>{{message}}</p>
+
+      <hr />
+
+      <p v-if="student === 'insan'">Atas</p>
+      <p v-else-if="student === 'oki'">Oki</p>
+      <p v-else>Bawah</p>
+
+      <hr />
+
+      <p v-show="isShown">isShown</p>
+
+      <hr />
+
+      <ul>
+        <li v-for="(student, index) in students">{{index + 1}} {{student}}</li>
+      </ul>
+
+      <hr />
+      <input :value="name" type="text" name="" id="" />
+
+      <hr />
+      <form action="" @submit.prevent="">
+        <input v-model.number="name" type="text" name="" id="">
+        <button type="submit">Submit</button>
+      </form>
+
+      <button @click="" type="submit">Submit</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+      const app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue!',
+          student: 'oki',
+          isShown: false,
+          students: ['oki', 'insan', 'ade'],
+          name: 123,
+        },
+        methods: {
+          alertin() {
+            console.log(this.name);
+          }
+        },
+      });
+    </script>
   </body>
 </html>

@@ -26,7 +26,6 @@ Directives:
 Additional:
 - v-model.trim
 - v-model.number
-- v-model.number
 
 
 JSON Server
