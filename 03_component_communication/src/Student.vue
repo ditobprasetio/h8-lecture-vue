@@ -10,7 +10,7 @@
         <td>{{ std.name }}</td>
       </tr>
       <tr>
-        <td>Sccore</td>
+        <td>Score</td>
         <td>{{ std.score }}</td>
       </tr>
       <tr>

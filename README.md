@@ -138,7 +138,7 @@ Add `.cache` & `dist` to .gitignore
 
 ```sh
 mkdir src
-touch touch index.html index.js src/App.vue src/Entity.vue
+touch touch index.html index.js src/App.vue src/Student.vue
 ```
 
 ```txt
@@ -196,7 +196,7 @@ _Student.vue_
         <td>{{ std.name }}</td>
       </tr>
       <tr>
-        <td>Sccore</td>
+        <td>Score</td>
         <td>{{ std.score }}</td>
       </tr>
       <tr>
@@ -212,11 +212,11 @@ _Student.vue_
 
 <script>
 export default {
-  name: 'Entity',
+  name: 'Student',
   props: ['std'], // register props
   data() {
     return {
-      title: 'Entity.vue',
+      title: 'Student.vue',
     };
   },
   methods: {
