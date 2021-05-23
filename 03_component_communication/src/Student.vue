@@ -1,0 +1,44 @@
+<template>
+  <div style="padding: 5px;">
+    <table border="1px">
+      <tr>
+        <td>ID</td>
+        <td>{{ std.id }}</td>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>{{ std.name }}</td>
+      </tr>
+      <tr>
+        <td>Sccore</td>
+        <td>{{ std.score }}</td>
+      </tr>
+      <tr>
+        <td>Action</td>
+        <!-- <td><button @click="$emit('deleteStd', std.id)">delete</button></td> -->
+        <td>
+          <button @click="rm">delete</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Entity',
+  props: ['std'],
+  data() {
+    return {
+      title: 'Entity.vue',
+    };
+  },
+  methods: {
+    rm() {
+      this.$emit('deleteStd', this.std.id);
+    },
+  },
+};
+</script>
+
+<style></style>
