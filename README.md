@@ -149,7 +149,7 @@ touch touch index.html index.js src/App.vue src/Student.vue
 ├── package-lock.json
 └── src
     ├── App.vue
-    └── Entity.vue
+    └── Student.vue
 ```
 
 _index.html_

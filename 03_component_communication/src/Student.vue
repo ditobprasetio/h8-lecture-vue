@@ -26,11 +26,11 @@
 
 <script>
 export default {
-  name: 'Entity',
+  name: 'Student',
   props: ['std'],
   data() {
     return {
-      title: 'Entity.vue',
+      title: 'Student.vue',
     };
   },
   methods: {
