@@ -60,10 +60,10 @@ _index.html_
 npm init -y
 npm i vue
 
-touch index.html
+touch index.html index.js
 mkdir src
 cd src
-touch App.vue main.js
+touch App.vue
 ```
 
 ```txt
@@ -130,6 +130,7 @@ export default {
 
 ```sh
 npm i -g parcel-bundler
+parcel index.html
 ```
 
 Add `.cache` & `dist` to .gitignore
@@ -137,6 +138,9 @@ Add `.cache` & `dist` to .gitignore
 ## Component Communication
 
 ```sh
+npm init -y
+npm i vue
+
 mkdir src
 touch touch index.html index.js src/App.vue src/Student.vue
 ```
